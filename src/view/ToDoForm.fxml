@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane fx:id="root" prefHeight="441.0" prefWidth="668.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.todoFormController">
+   <children>
+      <TextArea layoutX="14.0" layoutY="14.0" prefHeight="410.0" prefWidth="259.0" />
+      <Label layoutX="591.0" layoutY="14.0" prefHeight="17.0" prefWidth="34.0" />
+      <TextField layoutX="292.0" layoutY="46.0" prefHeight="25.0" prefWidth="362.0" />
+      <Button layoutX="580.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnOnClickActionDelete" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="484.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnOnClickActionUpdate" style="-fx-background-color: green;" text="Updadte" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="275.0" layoutY="125.0" prefHeight="3.0" prefWidth="385.0" />
+      <Button layoutX="292.0" layoutY="151.0" mnemonicParsing="false" onAction="#btnOnClickActionAddNewToDo" style="-fx-background-color: blue;" text="Add New To-Do" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="292.0" layoutY="186.0" prefHeight="140.0" prefWidth="362.0">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="Task Name" />
+            <TextField layoutX="14.0" layoutY="29.0" prefHeight="25.0" prefWidth="344.0" />
+            <Button layoutX="282.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnOnClickActionAddToList" style="-fx-background-color: blue;" text="Add to list" textFill="#fcfcfc">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="292.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnOnClickActionLogOut" style="-fx-background-color: green;" text="&lt;&lt;log out" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
