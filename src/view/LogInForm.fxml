@@ -11,7 +11,7 @@
       <Label layoutX="52.0" layoutY="19.0" prefHeight="17.0" prefWidth="131.0" text="Login to To-Do List " textFill="#2114d7" />
       <Label layoutX="47.0" layoutY="66.0" text="User Name" />
       <Label layoutX="46.0" layoutY="144.0" text="Password" />
-      <Label fx:id="createNewAccountOnclick" layoutX="63.0" layoutY="240.0" prefHeight="17.0" prefWidth="107.0" text="Create new account" textFill="#2a13c3" underline="true">
+      <Label fx:id="createNewAccountOnclick" layoutX="63.0" layoutY="240.0" onMouseClicked="#onMluseClickedCreateNewAccount" prefHeight="17.0" prefWidth="107.0" text="Create new account" textFill="#2a13c3" underline="true">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
