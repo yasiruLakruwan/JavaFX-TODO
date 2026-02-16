@@ -7,29 +7,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="228.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.createNewAccountFormController">
+<AnchorPane fx:id="root" prefHeight="435.0" prefWidth="228.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.createNewAccountFormController">
    <children>
       <Label layoutX="46.0" layoutY="14.0" prefHeight="21.0" prefWidth="133.0" text="Create new account" textFill="#200bdd">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="54.0" text="User Name" />
-      <Label layoutX="33.0" layoutY="126.0" text="E-Mail" />
-      <Label layoutX="34.0" layoutY="185.0" text="New password" />
-      <Label layoutX="34.0" layoutY="255.0" prefWidth="96.0" text="Confirm password" />
-      <TextField fx:id="txtUserName" layoutX="33.0" layoutY="83.0" />
-      <TextField fx:id="txtConfirmPassword" layoutX="33.0" layoutY="285.0" />
-      <TextField fx:id="txtPassword" layoutX="33.0" layoutY="213.0" />
-      <TextField fx:id="txtEmail" layoutX="33.0" layoutY="148.0" />
-      <Button fx:id="btnOnclickRegister" layoutX="78.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnOnClickAcrionRegister" style="-fx-background-color: green;" text="Register" textFill="WHITE">
+      <Label layoutX="33.0" layoutY="109.0" text="User Name" />
+      <Label layoutX="35.0" layoutY="181.0" text="E-Mail" />
+      <Label layoutX="36.0" layoutY="240.0" text="New password" />
+      <Label layoutX="36.0" layoutY="310.0" prefWidth="96.0" text="Confirm password" />
+      <TextField fx:id="txtUserName" layoutX="35.0" layoutY="138.0" />
+      <TextField fx:id="txtConfirmPassword" layoutX="35.0" layoutY="340.0" />
+      <TextField fx:id="txtPassword" layoutX="35.0" layoutY="268.0" />
+      <TextField fx:id="txtEmail" layoutX="35.0" layoutY="203.0" />
+      <Button fx:id="btnOnclickRegister" layoutX="80.0" layoutY="397.0" mnemonicParsing="false" onAction="#btnOnClickAcrionRegister" style="-fx-background-color: green;" text="Register" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Label fx:id="lblPasswordDoesNotMatched" layoutX="35.0" layoutY="269.0" prefHeight="17.0" prefWidth="149.0" text="Password doesnot match" textFill="#ff0c0c">
+      <Label fx:id="lblPasswordDoesNotMatched" layoutX="37.0" layoutY="324.0" prefHeight="17.0" prefWidth="149.0" text="Password doesnot match" textFill="#ff0c0c">
          <font>
             <Font size="10.0" />
          </font>
       </Label>
+      <Button fx:id="btnAddUser" layoutX="132.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnOnClickActionAddUser" style="-fx-background-color: blue;" text="+Add user" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="lblUid" layoutX="165.0" layoutY="76.0" prefHeight="17.0" prefWidth="40.0" />
    </children>
 </AnchorPane>
