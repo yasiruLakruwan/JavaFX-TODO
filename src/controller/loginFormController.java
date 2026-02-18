@@ -26,6 +26,9 @@ public class loginFormController {
     public PasswordField txtFieldPassword;
     public AnchorPane root;
 
+    public static String loginUserName;
+    public static String loginUserId;
+
     public void onMluseClickedCreateNewAccount(MouseEvent mouseEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../view/createNewAccountForm.fxml"));
         Scene scene = new Scene(parent);
@@ -49,6 +52,10 @@ public class loginFormController {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()){
+
+                loginUserId = resultSet.getString(1);
+                loginUserName = resultSet.getString(2);
+
                 Parent parent = FXMLLoader.load(getClass().getResource("../view/ToDoForm.fxml"));
                 Scene scene = new Scene(parent);
                 Stage primaryStage =(Stage) root.getScene().getWindow();
@@ -62,10 +69,16 @@ public class loginFormController {
                 txtFieldUsername.clear();
                 txtFieldPassword.clear();
             }
-
-
         } catch (SQLException | IOException throwables) {
             throwables.printStackTrace();
         }
     }
 }
+
+
+
+
+
+
+
+
